@@ -22,7 +22,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: npm
+          cache: pnpm
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
 
       - name: Deploy Docs
         uses: intergiro/vuepress-deploy@fix_git_repo # Update back to jenkey2011/vuepress-deploy@master once merged
