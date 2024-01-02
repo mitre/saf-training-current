@@ -8,17 +8,20 @@
     "docs:build": "vuepress build src",
     "docs:clean-dev": "vuepress dev src --clean-cache",
     "docs:dev": "vuepress dev src",
-    "docs:update-package": "pnpm dlx vp-update"
+    "docs:update-package": "pnpm dlx vp-update",
+    "start-server": "pnpm run docs:clean-dev",
+    "ci": "start-server-and-test start-server http://localhost:8080 cy:run",
+    "cypress:open": "cypress open",
+    "cy:run": "cypress run --e2e"
   },
   "devDependencies": {
     "@vuepress/client": "2.0.0-rc.0",
+    "cypress": "^13.6.2",
     "cypress-each": "^1.13.3",
-    "reveal.js": "^5.0.2",
+    "reveal.js": "^5.0.4",
+    "start-server-and-test": "^2.0.3",
     "vue": "^3.4.3",
     "vuepress": "2.0.0-rc.0",
     "vuepress-theme-hope": "2.0.0-rc.10"
-  },
-  "dependencies": {
-    "cypress": "^13.6.2"
   }
 }
