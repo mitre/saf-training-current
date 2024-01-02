@@ -23,14 +23,6 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-
-      - name: Install dependencies
-        run: pnpm install
-
       - name: Deploy Docs
         uses: intergiro/vuepress-deploy@fix_git_repo # Update back to jenkey2011/vuepress-deploy@master once merged
         env:

@@ -8,8 +8,8 @@
     "docs:build": "vuepress build src",
     "docs:clean-dev": "vuepress dev src --clean-cache",
     "docs:dev": "vuepress dev src",
-    "docs:update-package": "pnpm dlx vp-update",
-    "start-server": "pnpm run docs:clean-dev",
+    "docs:update-package": "npm dlx vp-update",
+    "start-server": "npm run docs:clean-dev",
     "ci": "start-server-and-test start-server http://localhost:8080 cy:run",
     "cypress:open": "cypress open",
     "cy:run": "cypress run --e2e"
