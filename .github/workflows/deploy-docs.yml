@@ -38,5 +38,5 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TARGET_REPO: mitre/saf-training-current
           TARGET_BRANCH: gh-pages
-          BUILD_SCRIPT: pnpm run docs:build
+          BUILD_SCRIPT: pnpm run docs:buld
           BUILD_DIR: src/.vuepress/dist/
