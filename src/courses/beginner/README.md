@@ -1,14 +1,17 @@
 ---
 order: 1
 next: 02.md
-title: 1. Class Overview
+title: Beginner Security Automation Developer Class
+shortTitle: Beginner Profile Development
 author: Aaron Lippold
 ---
 
 ## Class Objectives
+
 The purpose of this class is to give you the fundamentals of how to develop security validation content, particularly through hands-on examples developing InSpec profiles. This class will also show participants how to visualize and analyze their security results. By the end, you should be able to achieve all of the following objectives.
 
 ### Objectives:
+
 -	Describe the InSpec framework and its capabilities
 -	Describe the architecture of an InSpec profile
 -	Build an InSpec profile to transform security policy into automated security testing

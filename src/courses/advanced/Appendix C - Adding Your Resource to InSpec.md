@@ -1,5 +1,5 @@
 ---
-index: 16
+order: 16
 title: Appendix C - Adding Your Resource to InSpec
 author: Aaron Lippold
 headerDepth: 3

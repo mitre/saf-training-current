@@ -1,5 +1,5 @@
 ---
-index: 18
+order: 18
 title: Appendix B - More Resource Examples
 author: Aaron Lippold
 headerDepth: 3

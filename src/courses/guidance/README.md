@@ -1,7 +1,8 @@
 ---
 order: 1
 next: 02.md
-title: 1. Class Overview
+title: Security Guidance Developer Class
+shortTitle: Security Guidance Development
 author: Emily Rodriguez
 headerDepth: 3
 ---

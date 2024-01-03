@@ -1,14 +1,18 @@
 ---
+order: 1
 next: 02.md
-title: 1. Class Overview
+title: InSpec Advanced Profile Development
+shortTitle: Advanced Profile Development
 author: Aaron Lippold
 headerDepth: 3
 ---
 
 ## 1.1 Class Objectives
+
 The purpose of this class is to take you beyond profile development and give you the tools to actively participate in the open source security automation community. The advanced class builds off of the beginner class fundamentals, and by the end, you should be able to achieve the following objectives.
 
 ### 1.1.2 Advanced Class Objectives:
+
 - Apply SAF to your organization’s mission and understand the overall mission of SAF and the tools/techniques.
 - Automate security testing and go/no-go decisions by integrating InSpec scans and the SAF CLI into a workflow, such as CI/CD pipelines.
 - Understand how an existing InSpec profile works under-the-hood.
@@ -17,6 +21,7 @@ The purpose of this class is to take you beyond profile development and give you
 - Know how to propose a pull request to Chef InSpec to contribute your improved/developed InSpec    - resources back to the community.
 
 ## 1.2 About InSpec
+
 - InSpec is an open-source, community-developed  compliance validation framework
 - Provides a mechanism for defining machine-readable compliance and security requirements
 - Easy to create, validate, and read content
@@ -42,6 +47,7 @@ InSpec operates with most orchestration and CM tools found in the DevOps pipelin
 ![Alt text](../../assets/img/InSpec_Orchestration.png) -->
 
 ## 1.4 Where can I start on my own?
+
 You can contribute to existing profiles that can be found here:  
 [https://github.com/mitre](https://github.com/mitre)  
 

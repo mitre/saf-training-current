@@ -1,11 +1,14 @@
 ---
+order: 1
 next: 02.md
-title: 1. Class Overview
+title: SAF User Class
+shortTitle: SAF User Class
 author: Aaron Lippold
 headerDepth: 3
 ---
 
 ## 1.1 Class Overview
+
 The purpose of this class is to gain understanding and hands-on practical use of MITRE's Security Automation Framework with a focus on automating security validation and visualization. There is a survey at the end to give feedback on the class.
 
 ## 1.2 Consider your current status

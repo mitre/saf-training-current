@@ -1,5 +1,5 @@
 ---
-index: 17
+order: 17
 title: Appendix D - Example Pipeline for Validating an InSpec Profile
 author: Aaron Lippold
 headerDepth: 3

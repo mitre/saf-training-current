@@ -1,5 +1,5 @@
 ---
-index: 15
+order: 15
 title: Appendix B - Custom Resource Examples from InSpec
 author: Aaron Lippold
 headerDepth: 3
