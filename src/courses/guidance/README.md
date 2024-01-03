@@ -1,4 +1,5 @@
 ---
+order: 1
 next: 02.md
 title: 1. Class Overview
 author: Emily Rodriguez

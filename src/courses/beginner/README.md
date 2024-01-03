@@ -1,8 +1,8 @@
 ---
+order: 1
 next: 02.md
 title: 1. Class Overview
 author: Aaron Lippold
-headerDepth: 3
 ---
 
 ## Class Objectives
