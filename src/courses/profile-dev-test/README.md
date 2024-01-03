@@ -5,9 +5,9 @@ title: Development & Testing InSpec Profile
 author: Aaron Lippold
 ---
 
-## Overview
+# Overview
 
-This profile utilizes a variety of open-source tools including Ruby, the Test Kitchen suite, InSpec compliance language, Ansible, Docker, and shell scripting (bash/zsh). To contribute with Pull Requests and fixes, you'll need to set up your local test suite following the instructions provided below.
+The development and testing of profiles is accomplished by a  variety of tools including: Ruby, the Test Kitchen suite, InSpec compliance language, Ansible, Docker, and shell scripting (bash/zsh). To contribute with Pull Requests and fixes, you'll need to set up your local test suite following the instructions provided below.
 
 Our development and testing workflow is managed by Test Kitchen. This tool is integral to our GitHub Actions CI/CD Pipelines and is also used for local development, testing, and releasing updates, patches, and full releases of the profile.
 
