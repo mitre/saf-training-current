@@ -18,7 +18,7 @@ actions:
   - text: Guidance Development
     type: primary
     link: /courses/guidance/
-  - text: InSpec Profile Updating & Development
+  - text: Developing And Testing InSpec Profiles
     type: primary
     link: /courses/profile-dev-test
  
