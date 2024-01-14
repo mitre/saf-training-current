@@ -28,19 +28,28 @@ Test Kitchen uses Docker (or Podman, if preferred) and AWS (using free-tier reso
 
 Additionally, Test Kitchen uses the Red Hat hardened `ubi8 base container` from Platform One for testing. To test the hardened container portion of the testing suite, you'll need to set up and log in to your P1 Free account, then obtain a CLI token to pull the Platform One Iron Bank Red Hat Enterprise Linux 8 Universal Base Image (P1 IB UBI8) image into the test suite.
 
+## Running The Pipeline Locally
+
+The pipeline will, of course, run when code is pushed to the remote GitHub repository where it "lives." However, note that you can (and should!) use the pipeline code to construct your own test resources from your local development environment to play around with.
+
+The Test Kitchen files we discuss in this guide, for example, can be executed from your laptop just as well as on a GitHub action runner node. 
+
 ## Examples in this guide
 
 This guide will be describing the workflow that is in place around MITRE SAF's [Red Hat 8 STIG InSpec profile](https://github.com/mitre/redhat-enterprise-linux-8-stig-baseline) as a convenient example. We encourage anyone interested in contributing to one of our profiles, or writing one of their own, to poke around that repo and examine our test suite files in that repo. This guide will explain how they all work together to support the overall profile.
 
 ## Why Bother?
 
-We anticipate a question that goes something like this:
+> Quis custodiet ipsos custodes?
 
-**"I looked at a SAF repo and saw about a dozen different automation scripting files inside the InSpec profile -- why do we have to write so much automation to support an InSpec profile?! Isn't InSpec itself supposed to be automating the validation of other things?"** 
+        - Juvenal, Satire VI, lines 347–348, 1st-2nd century CE
 
-Good question. We answer with another question - **Who inspects the inspector?**
+> Who InSpecs the InSpec-ers?
 
-The reason that we set up our development environment for an InSpec profile this way is because setting up a full DevSecOps CI/CD pipeline makes for better code and better tests. The reason that we build the CI/CD content directly into the profile repo, and publish the pipeline artifacts on GitHub where anybody can see them, is because we want to be able to _prove that they work._
+        - MITRE SAF developer, five seconds after running test with bugs on lines 347-348, 2024 CE
+
+
+You may be wondering why we develop all this automation content to support InSpec profiles. The reason that we set up our development environment for an InSpec profile this way is because setting up a full DevSecOps CI/CD pipeline makes for better code and better tests. The reason that we build the CI/CD content directly into the profile repo, and publish the pipeline artifacts on GitHub where anybody can see them, is because we want to be able to _prove that they work._
 
 Remember that your users downstream who run your profile have no idea if the tests are necessarily accurate. We want to be able to point to evidence that InSpec produces expected results when run against a benchmarked configuration. That's why we want a full CI/CD pipeline set up for each profile; one that runs the profile against an off-the-shelf, completely fresh component (the "vanilla" test) and one that runs against a component that we have run hardening content against (the "hardened" test). Note also that we get the added benefit of testing whatever hardening content we use to produce the hardened test target.
 
